@@ -1,0 +1,11 @@
+version: '3.3'
+services:
+    mgweb:
+        build:
+            './.docker'            
+        volumes:
+            - /opt/www:/opt/www
+            - ./default.conf:/etc/nginx/conf.d/default.conf
+            - /tmp:/tmp/host
+        ports:
+            - "80:80"
