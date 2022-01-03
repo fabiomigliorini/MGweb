@@ -1,0 +1,51 @@
+body {
+   background-color: #fdce3d;
+   background-image: url("../imagens/fundos/V2M8Nx.jpg");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   min-height: 100%;
+   /* background-color: #cccccc; */
+}
+
+table {
+  background-color: #fdce3d;
+  background: none;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.titulo {
+  background-color: #ffae35;
+  color: #714318;
+}
+
+
+.item  {
+  transition: transform 0.4s; /* Animation */
+  opacity: 0.85;
+  filter: brightness(0.85);
+  -webkit-filter: brightness(0.85);
+  margin-bottom: 20px;
+}
+
+.item:hover  {
+  filter: brightness(1);
+  -webkit-filter: brightness(1);
+  transform: scale(1.07);
+  opacity: 1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+html {
+  height: 100%;
+}
+
+
