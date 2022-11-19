@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(mercurio.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api.agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api.mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br)
+domains=(mercurio.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api.agro.mgpapelaria.com.br api-agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api.mgspa.mgpapelaria.com.br api-mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br www.mgpapelaria.com.br mgpapelaria.com.br www.mgpapelaria.com mgpapelaria.com)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="suporte@mgpapelaria.com.br" # Adding a valid address is strongly recommended
