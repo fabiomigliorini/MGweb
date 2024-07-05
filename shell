@@ -1,2 +1,2 @@
 #!/bin/bash
-docker-compose exec mgweb /bin/sh
+docker compose exec mgweb /bin/sh
