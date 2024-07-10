@@ -3,7 +3,7 @@ services:
     mgweb:
         image: nginx:1.21.5-alpine
         command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
-        restart: always
+        restart: unless-stopped
         volumes:
             - /opt/www:/opt/www
             - ./data/nginx-dev:/etc/nginx/conf.d
