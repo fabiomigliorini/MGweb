@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(saturno.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api-agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api-mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br negocios.mgpapelaria.com.br pessoas.mgpapelaria.com.br)
+domains=(saturno.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api-agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api-mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br negocios.mgpapelaria.com.br pessoas.mgpapelaria.com.br auth.mgpapelaria.com.br)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="suporte@mgpapelaria.com.br" # Adding a valid address is strongly recommended
