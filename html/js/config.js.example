@@ -1,0 +1,28 @@
+// Configuracao de ambiente
+// Altere estas URLs conforme o ambiente (dev ou producao)
+const ENV_CONFIG = {
+  // URL base do sistema MG
+  // Producao: https://sistema.mgpapelaria.com.br
+  // Dev: https://sistema-dev.mgpapelaria.com.br
+  SISTEMA_URL: "https://sistema-dev.mgpapelaria.com.br",
+
+  // URL do MGspa
+  // Producao: https://mgspa.mgpapelaria.com.br
+  // Dev: https://mgspa-dev.mgpapelaria.com.br (exemplo)
+  MGSPA_URL: "https://mgspa-dev.mgpapelaria.com.br",
+
+  // URL do Pessoas
+  // Producao: https://pessoas.mgpapelaria.com.br
+  // Dev: https://pessoas-dev.mgpapelaria.com.br (exemplo)
+  PESSOAS_URL: "https://sistema-dev.mgpapelaria.com.br:8081",
+
+  // URL do Negocios
+  // Producao: https://negocios.mgpapelaria.com.br
+  // Dev: https://negocios-dev.mgpapelaria.com.br (exemplo)
+  NEGOCIOS_URL: "https://sistema-dev.mgpapelaria.com.br:9900",
+
+  // URL do Notas
+  // Producao: https://notas.mgpapelaria.com.br
+  // Dev: https://notas-dev.mgpapelaria.com.br (exemplo)
+  NOTAS_URL: "https://sistema-dev.mgpapelaria.com.br:8082",
+};

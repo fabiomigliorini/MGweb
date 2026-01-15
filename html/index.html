@@ -29,9 +29,45 @@
 
             <div class="row">
 
+              <!-- Negocios -->
+              <div class="item col-xl-3 col-md-4 col-6">
+                <a href="#" data-negocios-url="">
+                  <div class="card titulo mb-3">
+                    <div class="card-header p-1 pl-3 m-0">
+                      Negocios
+                    </div>
+                    <img class="card-img-bottom" src="imagens/telas/negocios.jpg">
+                  </div>
+                </a>
+              </div>
+
+              <!-- Notas -->
+              <div class="item col-xl-3 col-md-4 col-6">
+                <a href="#" data-notas-url="">
+                  <div class="card titulo mb-3">
+                    <div class="card-header p-1 pl-3 m-0">
+                      Notas
+                    </div>
+                    <img class="card-img-bottom" src="imagens/telas/notas.jpg">
+                  </div>
+                </a>
+              </div>
+
+              <!-- Pessoas -->
+              <div class="item col-xl-3 col-md-4 col-6">
+                <a href="#" data-pessoas-url="">
+                  <div class="card titulo mb-3">
+                    <div class="card-header p-1 pl-3 m-0">
+                      Pessoas
+                    </div>
+                    <img class="card-img-bottom" src="imagens/telas/pessoas.jpg">
+                  </div>
+                </a>
+              </div>
+
               <!-- MGsis -->
               <div class="item col-xl-3 col-md-4 col-6">
-                <a href="https://sistema.mgpapelaria.com.br/MGsis">
+                <a href="#" data-sistema-url="/MGsis">
                   <div class="card titulo mb-3">
                     <div class="card-header p-1 pl-3 m-0">
                       MGsis
@@ -41,23 +77,34 @@
                 </a>
               </div>
 
-	      <!-- 163 Entregas -->
-	      <!--
+              <!-- MGLara -->
               <div class="item col-xl-3 col-md-4 col-6">
-		<a href="http://cloud.taximachine.com.br/">
+                <a href="#" data-sistema-url="/MGLara">
                   <div class="card titulo mb-3">
                     <div class="card-header p-1 pl-3 m-0">
-                      163 Entregas
+                      MGLara
                     </div>
-                    <img class="card-img-bottom" src="imagens/telas/163entregas.jpg">
+                    <img class="card-img-bottom" src="imagens/telas/mglara.jpg">
                   </div>
                 </a>
-              </div>
-	      -->
+              </div>   
+              
+
+              <!-- MGspa -->
+              <div class="item col-xl-3 col-md-4 col-6">
+                <a href="#" data-mgspa-url="">
+                  <div class="card titulo mb-3">
+                    <div class="card-header p-1 pl-3 m-0">
+                      MGspa
+                    </div>
+                    <img class="card-img-bottom" src="imagens/telas/mgspa.jpg">
+                  </div>
+                </a>
+              </div>              
 
               <!-- Mult Vale -->
               <div class="item col-xl-3 col-md-4 col-6">
-		<a href="https://sistema.algorix.com/multvale/Login.aspx?op=Login">
+		            <a href="https://sistema.algorix.com/multvale/Login.aspx?op=Login">
                   <div class="card titulo mb-3">
                     <div class="card-header p-1 pl-3 m-0">
                       Mult Vale
@@ -68,7 +115,7 @@
               </div>
 
 
-	      <!-- Le Card -->
+	            <!-- Le Card -->
               <div class="item col-xl-3 col-md-4 col-6">
                 <a href="https://cartao.lecard.com.br:4434/login/Login.aspx?op=Login">
                   <div class="card titulo mb-3">
@@ -81,9 +128,9 @@
               </div>
 
 
-	      <!-- Listas Escolares -->
+	            <!-- Listas Escolares -->
               <div class="item col-xl-3 col-md-4 col-6">
-		<a href="https://drive.google.com/drive/folders/19uSa93Qb7UUUX8384aAX_Tt6Wq5jck17?usp=sharing">
+		            <a href="https://drive.google.com/drive/folders/19uSa93Qb7UUUX8384aAX_Tt6Wq5jck17?usp=sharing">
                   <div class="card titulo mb-3">
                     <div class="card-header p-1 pl-3 m-0">
                       Listas Escolares
@@ -93,38 +140,15 @@
                 </a>
               </div>
 
-              <!-- MGLara -->
-              <div class="item col-xl-3 col-md-4 col-6">
-                <a href="https://sistema.mgpapelaria.com.br/MGLara">
-                  <div class="card titulo mb-3">
-                    <div class="card-header p-1 pl-3 m-0">
-                      MGLara
-                    </div>
-                    <img class="card-img-bottom" src="imagens/telas/mglara.jpg">
-                  </div>
-                </a>
-              </div>
 
               <!-- MGUplon -->
               <div class="item col-xl-3 col-md-4 col-6">
-                <a href="https://sistema.mgpapelaria.com.br/MGUplon">
+                <a href="#" data-sistema-url="/MGUplon">
                   <div class="card titulo mb-3">
                     <div class="card-header p-1 pl-3 m-0">
                       MGUplon
                     </div>
                     <img class="card-img-bottom" src="imagens/telas/mguplon.jpg">
-                  </div>
-                </a>
-              </div>
-
-              <!-- MGspa -->
-              <div class="item col-xl-3 col-md-4 col-6">
-                <a href="https://mgspa.mgpapelaria.com.br">
-                  <div class="card titulo mb-3">
-                    <div class="card-header p-1 pl-3 m-0">
-                      MGspa
-                    </div>
-                    <img class="card-img-bottom" src="imagens/telas/mgspa.jpg">
                   </div>
                 </a>
               </div>
@@ -242,6 +266,10 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Configuracao de ambiente e substituicao de URLs -->
+  <script src="js/config.js"></script>
+  <script src="js/url-replacer.js"></script>
 
 </body>
 
