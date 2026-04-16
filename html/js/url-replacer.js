@@ -29,4 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const path = link.getAttribute('data-notas-url');
         link.href = ENV_CONFIG.NOTAS_URL + path;
     });
+
+    // Links com data-contas-url
+    document.querySelectorAll('a[data-contas-url]').forEach(function(link) {
+        const path = link.getAttribute('data-contas-url');
+        link.href = ENV_CONFIG.CONTAS_URL + path;
+    });
 });
