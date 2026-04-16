@@ -1,6 +1,6 @@
 #!/bin/bash
 
-domains=(saturno.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api-agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api-mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br negocios.mgpapelaria.com.br pessoas.mgpapelaria.com.br auth.mgpapelaria.com.br notas.mgpapelaria.com.br)
+domains=(mercurio.mgpapelaria.com.br sistema.mgpapelaria.com.br agro.mgpapelaria.com.br api-agro.mgpapelaria.com.br mgspa.mgpapelaria.com.br api-mgspa.mgpapelaria.com.br pix.mgpapelaria.com.br negocios.mgpapelaria.com.br pessoas.mgpapelaria.com.br auth.mgpapelaria.com.br notas.mgpapelaria.com.br)
 rsa_key_size=4096
 data_path="./data/certbot"
 email="suporte@mgpapelaria.com.br" # Adding a valid address is strongly recommended
@@ -23,8 +23,11 @@ if [ ! -e "$data_path/conf/options-ssl-nginx.conf" ] || [ ! -e "$data_path/conf/
 fi
 
 echo "### Creating dummy certificate for $domains ..."
-path="/etc/letsencrypt/live/$domains"
-mkdir -p "$data_path/conf/live/$domains"
+primary_domain="${domains[0]}"
+path="/etc/letsencrypt/live/$primary_domain"
+mkdir -p "$data_path/conf/live/$primary_domain"
+#path="/etc/letsencrypt/live/$domains"
+#mkdir -p "$data_path/conf/live/$domains"
 docker compose run --rm --entrypoint "\
   openssl req -x509 -nodes -newkey rsa:$rsa_key_size -days 1\
     -keyout '$path/privkey.pem' \
