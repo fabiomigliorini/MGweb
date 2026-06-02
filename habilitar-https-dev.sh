@@ -10,6 +10,7 @@ DOMAINS=(
   "negocios-dev.mgpapelaria.com.br"
   "notas-dev.mgpapelaria.com.br"
   "pessoas-dev.mgpapelaria.com.br"
+  "estoque-dev.mgpapelaria.com.br"
 )
 
 echo "==> Detectando IP da máquina..."

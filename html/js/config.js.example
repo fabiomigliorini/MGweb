@@ -25,4 +25,10 @@ const ENV_CONFIG = {
   // Producao: https://notas.mgpapelaria.com.br
   // Dev: https://notas-dev.mgpapelaria.com.br (exemplo)
   NOTAS_URL: "https://sistema-dev.mgpapelaria.com.br:8082",
+
+  // URL do Estoque
+  // Producao: https://estoque.mgpapelaria.com.br
+  // Dev: https://estoque-dev.mgpapelaria.com.br (exemplo)
+  ESTOQUE_URL: "https://sistema-dev.mgpapelaria.com.br:8087",
+
 };
