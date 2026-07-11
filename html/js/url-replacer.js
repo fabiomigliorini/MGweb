@@ -41,4 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const path = link.getAttribute("data-estoque-url");
     link.href = ENV_CONFIG.ESTOQUE_URL + path;
   });
+
+  // Links com data-agro-url
+  document.querySelectorAll("a[data-agro-url]").forEach(function (link) {
+    const path = link.getAttribute("data-agro-url");
+    link.href = ENV_CONFIG.AGRO_URL + path;
+  });
 });

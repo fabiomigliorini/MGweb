@@ -31,4 +31,9 @@ const ENV_CONFIG = {
   // Dev: https://estoque-dev.mgpapelaria.com.br (exemplo)
   ESTOQUE_URL: "https://sistema-dev.mgpapelaria.com.br:8087",
 
+  // URL do Agro
+  // Producao: https://agro.mgpapelaria.com.br
+  // Dev: https://sistema-dev.mgpapelaria.com.br:8088
+  AGRO_URL: "https://sistema-dev.mgpapelaria.com.br:8088",
+
 };
